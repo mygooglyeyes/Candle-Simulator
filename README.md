@@ -1,4 +1,4 @@
-Candle-Simulator
+Flame-Simulator
 ================
 
 uses a trinket 5v or other arduino compatible and an adafruit neopixel strip (8 x WS8212 RGB leds)
