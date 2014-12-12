@@ -4,7 +4,6 @@
 int numpix = 6;  //set the number of Pixels you have/want - more = brighter
 int randNumber;
 int color;
-bool which;
 int wait;
 int randpix;
 //initalize the neopixel library
