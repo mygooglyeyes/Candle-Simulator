@@ -24,7 +24,7 @@ void loop()
 	color = random(0, 2); //Pick either yellow or orange
 	for (int i = 0; i < numpix / 2; i = i++) //so it leaves a certain number of yellow pixels on (number of pixels/3)
 	{
-		strip.setPixelColor(i, 255, 130, 0);  //set the number of pixels to turn on and color value (yellowish)
+		strip.setPixelColor(i, 255, 120, 0);  //set the number of pixels to turn on and color value (yellowish)
 	}
 	strip.show(); //turn pixels on
 
