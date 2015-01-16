@@ -1,7 +1,7 @@
 Candle/Flame-Simulator
 ================
 
-Uses a trinket 5v or other arduino compatible and an adafruit neopixel stick (8 x WS2812 RGB leds)
+Uses a trinket 3v, 5v or other arduino compatible and an adafruit neopixel stick (8 x WS2812 RGB leds)
 
 great for simulating fire - uses combinations of red, yellow, and flickering to make it look like a flame.
 
