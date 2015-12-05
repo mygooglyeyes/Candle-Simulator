@@ -22,7 +22,7 @@ void loop()
 	wait = random(100, 120);  //set a random wait period
 	randpix = random(0, numpix + 1); //choose a random number of pixels
 	color = random(0, 2); //Pick either yellow or orange
-	for (int i = 0; i < numpix / 2; i = i++) //so it leaves a certain number of yellow pixels on (number of pixels/3)
+	for (int i = 0; i < numpix / 2; i++) //so it leaves a certain number of yellow pixels on (number of pixels/3)
 	{
 		strip.setPixelColor(i, 255, 120, 0);  //set the number of pixels to turn on and color value (yellowish)
 	}
@@ -42,7 +42,7 @@ void loop()
 // Function for when red is chosen
 void flickred(uint32_t c, uint8_t wait, uint8_t p)
 {
-	for (int i = 0; i < p - 2; i = i++) //loop for given random pixel count (passed from loop)
+	for (int i = 0; i < p - 2; i++) //loop for given random pixel count (passed from loop)
 	{
 		strip.setPixelColor(i, c);
 	}
@@ -51,7 +51,7 @@ void flickred(uint32_t c, uint8_t wait, uint8_t p)
 
 	delay(wait);
 
-	for (int i = 0; i < p; i = i++)
+	for (int i = 0; i < p; i++)
 	{
 		strip.setPixelColor(i, 0);        //turn pixel off
 	}
@@ -61,7 +61,7 @@ void flickred(uint32_t c, uint8_t wait, uint8_t p)
 // function for when yellow is chosen
 void flickYellow(uint32_t c, uint8_t wait, uint8_t p)
 {
-	for (int i = 0; i < p; i = i++)  //loop for given random pixel count (passed from loop)
+	for (int i = 0; i < p; i++)  //loop for given random pixel count (passed from loop)
 	{
 		strip.setPixelColor(i, c);
 	}
@@ -70,7 +70,7 @@ void flickYellow(uint32_t c, uint8_t wait, uint8_t p)
 
 	delay(wait);
 
-	for (int i = 0; i < p; i = i++)
+	for (int i = 0; i < p; i++)
 	{
 		strip.setPixelColor(i, 0);        //turn pixel off
 	}
